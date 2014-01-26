@@ -1,0 +1,154 @@
+/* ==========================================================================
+   Mixins
+   ========================================================================== */
+/* Border Radius Standard Mixin */
+.border-radius (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
+  /* Implementation */
+// #somediv {
+//     .border-radius(20px);
+// }
+
+/* Border Radius Custom Mixin */
+.border-radius-custom (@topleft: 5px, @topright: 5px, @bottomleft: 5px, @bottomright: 5px) {
+  -webkit-border-radius: @topleft @topright @bottomright @bottomleft;
+  -moz-border-radius: @topleft @topright @bottomright @bottomleft;
+  border-radius: @topleft @topright @bottomright @bottomleft;
+}
+
+/* Implementation */
+// #somediv {
+//     .border-radius-custom(20px, 20px, 0px, 0px);
+// }
+
+/* Box Shadow Mixin */
+.box-shadow (@x: 0px, @y: 3px, @blur: 5px, @alpha: 0.5) {
+  -webkit-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+  -moz-box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+  box-shadow: @x @y @blur rgba(0, 0, 0, @alpha);
+}
+
+/* Implementation */
+// #somediv {
+//     .box-shadow(5px, 5px, 6px, 0.3);
+// } 
+
+/* Transition Mixin */
+.transition (@prop: all, @time: 1s, @ease: linear) {
+  -webkit-transition: @prop @time @ease;
+  -moz-transition: @prop @time @ease;
+  -o-transition: @prop @time @ease;
+  -ms-transition: @prop @time @ease;
+  transition: @prop @time @ease;
+}
+
+/* Implementation */
+// #somediv {
+//     .transition(all, 0.5s, ease-in);
+// } 
+
+// #somediv:hover {
+//     opacity: 0;
+// }
+
+/* Transform Mixin */
+.transform (@rotate: 90deg, @scale: 1, @skew: 1deg, @translate: 10px) {
+  -webkit-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+  -moz-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+  -o-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+  -ms-transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+  transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
+}
+
+/* Implementation */
+// #someDiv {
+//     .transform(5deg, 0.5, 1deg, 0px);
+// } 
+
+/* Gradient Mixin */
+.gradient (@origin: left, @start: #ffffff, @stop: #000000) {
+  background-color: @start;
+  background-image: -webkit-linear-gradient(@origin, @start, @stop);
+  background-image: -moz-linear-gradient(@origin, @start, @stop);
+  background-image: -o-linear-gradient(@origin, @start, @stop);
+  background-image: -ms-linear-gradient(@origin, @start, @stop);
+  background-image: linear-gradient(@origin, @start, @stop);
+}
+
+/* Implementation */
+// #someDiv {
+//     .gradient(left, #663333, #333333);
+// } 
+
+/* Opacity Mixin */
+.opacity(@opacity: 100) {
+  -webkit-opacity: @opacity / 100;
+  -moz-opacity: @opacity / 100;
+  -o-opacity: @opacity / 100;
+  filter: e(%("alpha(opacity=%d)", @opacity));
+  opacity: @opacity / 100;
+}
+
+/* Implementation */
+// #someDiv {
+//     .opacity(80);
+// } 
+
+
+/* Complementary Color Scheme Mixin */
+@baseComp: @rwd-base-color;
+@complementComp1: spin(@baseComp, 180);
+@complementComp2: darken(spin(@baseComp, 180), 5%);
+@lightenComp1: lighten(@baseComp, 15%);
+@lightenComp2: lighten(@baseComp, 30%);
+
+/* Implementation */
+// .one   {color: @base;}
+// .two   {color: @complement1;}
+// .three {color: @complement2;}
+// .four  {color: @lighten1;}
+// .five  {color: @lighten2;}
+
+/* Subtle Color Scheme Mixin */
+@baseSubtle: @rwd-base-color;
+@lighterSubtle1: lighten(spin(@baseSubtle, 5), 10%);
+@lighterSubtle2: lighten(spin(@baseSubtle, 10), 20%);
+@darkerSubtle1: darken(spin(@baseSubtle, -5), 10%);
+@darkerSubtle2: darken(spin(@baseSubtle, -10), 20%);
+
+/* Implementation */
+// .one   {color: @base;}
+// .two   {color: @lighter1;}
+// .three {color: @lighter2;}
+// .four  {color: @darker1;}
+// .five  {color: @darker2;}
+
+// Input placeholder text
+.placeholder(@color: @rwd-dark-gray) {
+   :-moz-placeholder {color: @color;}
+   ::-webkit-input-placeholder {color: @color;}
+}
+
+/* Implementation */
+// #someDiv {
+//     .placeholder();
+// } 
+
+/* EM Font Mixin */
+.font(@string) {
+@emfont: (@string / 10);
+@emline: (@string / 10) * 1.5 / 2;
+font-size: @string * 1px;
+font-size: ~"@{emfont}em";
+line-height: @string * 1.5px / 2;
+line-height: ~"@{emline}em";
+}
+/* Implementation */
+// #someDiv {
+//     .font(1.4)
+// }
+

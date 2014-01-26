@@ -7,25 +7,25 @@
     </div>
   <![endif]-->
 
- <?php
-     do_action('get_header');
-     // Use Bootstrap's navbar if enabled in config.php
-     if (current_theme_supports('bootstrap-top-navbar')) {
-       get_template_part('templates/header-top-navbar-rwd');
-     } else {
-       get_template_part('templates/header');
-     }
-   ?>
-   <div class="jumboheader">
-       <h1>
-         <?php echo roots_title(); ?>
-       </h1>
-       <h2>
-         I am a Web Developer making the web awesome!
-       </h2>
-     </div>
-
+  <?php
+    do_action('get_header');
+    // Use Bootstrap's navbar if enabled in config.php
+    if (current_theme_supports('bootstrap-top-navbar')) {
+      get_template_part('templates/header-top-navbar-rwd');
+    } else {
+      get_template_part('templates/header');
+    }
+  ?>
+  <div class="jumboheader">
+      <h1>
+        <?php echo roots_title(); ?>
+      </h1>
+      <h2>
+        I am a Web Developer making the web awesome!
+      </h2>
+    </div>
   <div class="wrap container" role="document">
+    
     <div class="content row">
       <main class="main <?php echo roots_main_class(); ?>" role="main">
         <?php include roots_template_path(); ?>

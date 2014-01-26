@@ -46,6 +46,7 @@ module.exports = function(grunt) {
             'assets/js/plugins/bootstrap/tab.js',
             'assets/js/plugins/bootstrap/affix.js',
             'assets/js/plugins/*.js',
+            'assets/js/*.js',
             'assets/js/_*.js'
           ]
         },
@@ -69,7 +70,8 @@ module.exports = function(grunt) {
       less: {
         files: [
           'assets/less/*.less',
-          'assets/less/bootstrap/*.less'
+          'assets/less/bootstrap/*.less',
+          'assets/less/font-awesome/*.less'
         ],
         tasks: ['less', 'version']
       },
@@ -83,7 +85,7 @@ module.exports = function(grunt) {
         // Browser live reloading
         // https://github.com/gruntjs/grunt-contrib-watch#live-reloading
         options: {
-          livereload: false
+          livereload: true
         },
         files: [
           'assets/css/main.min.css',
