@@ -93,7 +93,7 @@
 		}
 		.navbar{
 			margin-bottom: 0;
-			box-shadow: 0 .5em 1.2em rgba(0,0,0,0.7);
+			//box-shadow: 0 .5em 1.2em rgba(0,0,0,0.7);
 		}
 		.jumboheader{
 			.jumbotron;
@@ -103,13 +103,14 @@
 			padding: 6em 0;
 			text-align: center;
 			border-radius: 0px;
-			background: url(../img/bg.jpg);
-			background-attachment: fixed;
-			background-size: cover;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			background-position: 50% 50%;
+			background-color: @rwd-base-color;
+			.base64Jumbo();
+			// background-attachment: fixed;
+			// background-size: cover;
+			// -webkit-background-size: cover;
+			// -moz-background-size: cover;
+			// -o-background-size: cover;
+			// background-position: 50% 50%;
 			h1 {
 				color:#FFF;
 				.font(80);
@@ -149,16 +150,19 @@
  nav{
 	width: 100%;
 	height: 2em;
-	border-bottom:1px solid @rwd-light-gray;
+	.base64stripe();
+	text-shadow: 0 -1px 0 rgba(0,0,0,.15);
+	background-color: @rwd-base-color;
+	border-color: @rwd-base-color-dark;
+	box-shadow: 0 1px 0 rgba(255,255,255,.2);
 	position: fixed;
 	top:0;
 	left:0;
 	z-index:20;
-	background-color:@rwd-white;
 	li {
 		margin:0;
 		.pull-left();
-		border-right:1px solid @rwd-light-gray;
+		border-right:1px solid rgba(255,255,255,.2);
 		span{
 
 		}
@@ -168,7 +172,7 @@
  nav a,
  nav .logo,
  #sideNav a {
-	color:@rwd-base-color;
+	color:@white;
 	text-decoration:none;
 	display:block;
 	padding:.35em .8em;
@@ -179,11 +183,15 @@
 //line-height:35px;
 
 }
+
+#sideNav a{
+	color:@rwd-base-color;
+}  
 nav a:hover,
 #sideNav a:hover {
 	color:@rwd-white;
 	background-color: @rwd-base-color;
-}  
+}
 #sideNav,
 #sideNav.showHalfMenu,
 #sideNav.showFullMenu,
@@ -198,8 +206,9 @@ nav a:hover,
 	top:2em;
 	width: 2.5em;
 	height:100%;
+	text-shadow: 0 -1px 0 rgba(255,255,255,.3);
 	border-right:1px solid @rwd-light-gray;
-	background-color:@rwd-white;
+	background-color:@rwd-light-gray;
 	overflow-y: auto; 
 }
 
@@ -233,7 +242,7 @@ nav a:hover,
 			margin:0;      
 			font-weight:@rwd-ssp-weight-light;
 			input.search{
-				border-bottom:1px solid @rwd-light-gray;
+				border-bottom:1px solid @white;
 			}
 			a{
 				i{
@@ -261,16 +270,16 @@ nav a:hover,
 
 
 input.search::-webkit-input-placeholder {
-	color:@rwd-base-color;    
+	color:@rwd-white;    
 }
 input.search:-moz-placeholder {
-	color:@rwd-base-color;    
+	color:@rwd-white;    
 }
 input.search::-moz-placeholder {
-	color:@rwd-base-color;    
+	color:@rwd-white;
 }
 input.search:-ms-input-placeholder {
-	color:@rwd-base-color;
+	color:@rwd-white;
 }
 
 #sideNav li.searchForm:hover input.search:focus,
@@ -296,13 +305,14 @@ input.search:-ms-input-placeholder {
 			height: 2em;
 			right: 0.1em;
 			z-index: 100;
+			color:@rwd-white;
 			i{
-				color:@rwd-dark-gray;
+				color:@rwd-white;
 				.transition (@prop: width, @time: 400ms, @ease: ease);
 				&:hover,
 				&:focus,
 				&:active{
-					color: @rwd-base-color;
+					color:@rwd-white;
 				}
 			}
 		}
@@ -317,7 +327,7 @@ input.search:-ms-input-placeholder {
 			outline:0;
 			font-weight:@rwd-ssp-weight-light;
 			background:transparent;
-			color:@rwd-light-gray; 
+			color:@rwd-white; 
 			border: none;
 			.transition (@prop: width, @time: 400ms, @ease: ease);
 			&:focus{
@@ -404,21 +414,22 @@ input.search:-ms-input-placeholder {
 	 Footer
 	 ========================================================================== */
 	 .jumbofooter{
-		footer{
-
-		}
 		.jumbotron;
 		width:100%;
 		height: @rwd-jumbofooter-height;
 		position: relative;
 		border-radius: 0px;
-		background: url(../img/bg.jpg);
+		.base64Jumbo();
+		background-color: @rwd-footer;
 		background-attachment: fixed;
 		background-size: cover;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-position: 50% 50%;
+		footer{
+			color: @white;
+		}
 		
 	 }
 
