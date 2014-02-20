@@ -45,6 +45,8 @@ module.exports = function(grunt) {
             'assets/js/plugins/bootstrap/scrollspy.js',
             'assets/js/plugins/bootstrap/tab.js',
             'assets/js/plugins/bootstrap/affix.js',
+            'assets/js/plugins/jQuery.headroom.min.js',
+            'assets/js/plugins/headroom.min.js',
             'assets/js/plugins/*.js',
             'assets/js/*.js',
             'assets/js/_*.js'
