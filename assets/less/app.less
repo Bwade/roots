@@ -433,14 +433,23 @@ input.searchForm:-ms-input-placeholder {
 			}
 		}
 		.cta-bottom{
-			background-color: @rwd-base-comp-mint;
+			background-color: @rwd-base-comp-blue;
 			padding:3em 0;
+			color: @white;
 			h4{
-				text-align: center;
+				text-align: left;
 				line-height: 1em;
 				color: @white;
 				text-shadow: 0 -1px 0 rgba(0,0,0,.15);
 				font-weight:  @rwd-ssp-weight-light;
+			}
+			.quote{
+				font-style:italic;
+				font-weight: @rwd-ssp-weight-medium;
+			}
+			.author{
+				text-align: right;
+				font-weight: @rwd-ssp-weight-light;
 			}
 		}
 		.home-services{
@@ -462,22 +471,30 @@ input.searchForm:-ms-input-placeholder {
 			.nav-tabs {
 				border-bottom: 1px solid #dddddd;
 			}
-			.col-md-4 {
+			.col-md-3 {
 				padding-left: 0px;
 				padding-right: 0px;
 			}
 
-			.col-md-8 {
-				padding-left: 0px;
-				padding-right: 0px;
+			.col-md-9 {
+				h5{
+					.font(14);
+				}
+				padding:0;
+				.tab-content{
+					padding: 2em;
+				}
+				.stars{
+					text-align: right;
+				}
 			}
 			.nav-tabs > li.active > a,
 			.nav-tabs > li.active > a:hover,
 			.nav-tabs > li.active > a:focus {
-				color: #555555;
+				color: @rwd-base-color-dark;
 				cursor: default;
-				background-color: #ffffff;
-				border-left: 5px solid #1abc9c;
+				background-color: @white;
+				border-left: 5px solid @rwd-base-comp-mint;
 				border-bottom-color: transparent;
 				border-top-color: transparent;
 				border-right-color: transparent;
@@ -487,10 +504,13 @@ input.searchForm:-ms-input-placeholder {
 			.nav-tabs > li > a {
 				margin-right: 2px;
 				line-height: 1.428571429;
-				border-bottom: 1px solid #dddddd;
-				border-radius: 0 0 0 0;
+				border-bottom: 1px solid @rwd-medium-gray;
+				border-radius: 0;
 				width: 100%;
-				background-color: #f2f2f2;
+				background-color: @rwd-lighter-gray;
+				&:hover{
+					background-color: @rwd-light-gray;
+				}
 			}
 
 			.tab-content {
@@ -549,7 +569,15 @@ input.searchForm:-ms-input-placeholder {
 	 Footer
 	 ========================================================================== */
 
-	 .content-info { }
+	 .content-info {
+		.copyright{
+	 		padding: 1em 0;
+			text-align: right;
+			.fa-heart{
+				color: @rwd-base-color;
+			}
+		}
+	 }
 
 /* ==========================================================================
 	 WordPress Generated Classes
