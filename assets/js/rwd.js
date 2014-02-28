@@ -35,7 +35,7 @@ var $win = $(window),$home_main = $('.page-home #main');
 // });
 
 //vCard Tabs
-$('#myTab a').click(function (e) {
+$('#aboutTabs a').click(function (e) {
 e.preventDefault();
 $(this).tab('show');
 });

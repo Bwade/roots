@@ -1319,4 +1319,6 @@ input.search-form::-webkit-input-placeholder{color:#ff4040}
 .alignleft{float:left}
 .alignright{float:right}
 figure.alignnone{margin-left:0;margin-right:0}
-@media (min-width:768px){}@media (min-width:992px){}@media (min-width:1200px){}@media only screen and (min-width:200px) and (max-width:480px){nav a,#sideNav a{padding:.65em .8em} nav a#btn-menu{padding:.65em .8em} #sideNav.showFullMenu,#sideNav.showFullMenu li,#sideNav.showFullMenu a{width:100%}}
+@media (min-width:768px){}@media (min-width:992px){}@media (min-width:1200px){}@media only screen and (min-width:200px) and (max-width:480px){nav a,#sideNav a{padding:.65em .8em} nav a#btn-menu{padding:.65em .8em} #sideNav.showFullMenu,#sideNav.showFullMenu li,#sideNav.showFullMenu a{width:100%}}.affix{position:fixed;top:49px;left:116px;width:285px}
+ul.affix-top{position:static}
+ul.affix-bottom{position:absolute}

@@ -42,17 +42,17 @@
 </section><!-- /home-services-->
 <section class="home-about pane">
 	<div class="container">
-		<div class="col-md-12" data-scrollreveal="enter from the right and move 50px over 1s">
+		<div class="col-md-12"  data-scrollreveal="enter from the left and move 50px over .5s">
 
 			<!-- ===== vCard Navigation ===== -->
 			<div class="row">
 				<div class="col-md-3">
 					<!-- <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/img/me.jpg" alt="Me"> -->
-					<ul class="nav nav-tabs nav-stacked" id="myTab">
-						<li class="active"><a href="#about" data-scrollreveal="enter from the left and move 50px over .5s">About</a></li>
-						<li><a href="#experience" data-scrollreveal="enter from the left and move 50px over .5s">Experience</a></li>
-						<li><a href="#skills" data-scrollreveal="enter from the left and move 50px over .5s">Skills</a></li>
-						<li><a href="#contact" data-scrollreveal="enter from the left and move 50px over .5s">Contact</a></li>
+					<ul id="aboutTabs" class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="1545">
+						<li class="active"><a href="#about">About</a></li>
+						<li><a href="#experience">Experience</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#contact">Contact</a></li>
 					</ul>    			
 				</div><!-- col-md-4 -->
 
@@ -191,7 +191,7 @@
 											<div class="col-xs-6"><p>NodeJS</p></div>
 											<div class="col-xs-6 stars"><p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></p></div>
 											<div class="col-xs-6"><p>Yeoman</p></div>
-											<div class="col-xs-6 stars"><p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i></p></div>
+											<div class="col-xs-6 stars"><p><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></p></div>
 										</div>
 									</div>
 								</div><!-- col-xs-6 -->
