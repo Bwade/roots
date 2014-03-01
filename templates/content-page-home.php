@@ -46,7 +46,7 @@
 
 			<!-- ===== vCard Navigation ===== -->
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-md-3 about-nav">
 					<!-- <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/img/me.jpg" alt="Me"> -->
 					<ul id="aboutTabs" class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="1545">
 						<li class="active"><a href="#about">About</a></li>
@@ -57,11 +57,14 @@
 				</div><!-- col-md-4 -->
 
 				<!-- ===== vCard Content ===== -->
-				<div class="col-md-9">
+				<div class="col-md-9 about-content-pane">
 					<div class="tab-content">
 
 						<!-- ===== About Tab ===== -->
 						<div class="tab-pane fade in active" id="about">
+							<div class="row">
+								<h3><i class="fa fa-user"></i> About</h3>
+							</div>
 							<div class="row">
 								<div class="col-md-12">
 									<p>Highly proficient, creative, and committed professional with exceptional knowledge of multimedia production gained through seven years experience in the Web Design / Development fields. Proficient in grasping new concepts and procedures related to technical research and latest design/development trends. Has the ability to implement various languages, programs, and designs techniques during production of modern, innovative, and user-friendly projects to fulfill company needs. A self-starter with proven leadership skills accompanied with a team oriented mind. Is fully capable of multitasking in a fast paced environment while handling multiple projects.</p>
@@ -75,63 +78,66 @@
 						<!-- ===== Experience Tab ===== -->
 						<div class="tab-pane fade" id="experience">
 							<div class="row">
+								<h3><i class="fa fa-suitcase"></i> Experience</h3>
+							</div>
+							<div class="row  work-content">
 								<div class="col-lg-2">
 									<h5>WORK</h5>
 								</div>
 								<div class="col-lg-8">
-									<h5>Centene Corporation</h5>
-									<h6>A.S.E. Web Producer</h6>
+									<h3>Centene Corporation</h3>
+									<h4>A.S.E. Web Producer</h4>
 									<p>Administer a network of over 60+ Wordpress websites on a Multisite install. Design and Develop Wordpress themes with an emphasis on mobile first, responsive design. Work with various departments to maintain website content and build front-end functionality utilizing CSS3, HTML5, jQuery and PHP. Focus on the user experience when building or modifying new and existing web sites and user interfaces.</p>
 
 									<p>Serves as a liaison with marketing department in adding new features, functionality and content updates to new and existing websites. Research and explore new and upcoming technologies to be utilized in new and existing websites and applications.</p>
 								</div>
 								<div class="col-lg-2">
-									<p>May 2013 – Present<br><em>(10 months)</em></p>
+									<h5>May 2013 – Present<br><em>(10 months)</em></h5>
 								</div>
 							</div>
-							<div class="row">
+							<div class="row work-content">
 								<div class="col-lg-8 col-lg-offset-2">
-									<h5>TYRANT Productions</h5>
-									<h6>Web/Graphic Designer</h6>
+									<h3>TYRANT Productions</h3>
+									<h4>Web/Graphic Designer</h4>
 									<p>Brought in to design and develop websites utilizing Wordpress. Collaborated with one other team member in building a Performance Car Parts catalog for Tim McAmis Performance Parts. using Adobe InDesign and Photoshop. Applied Graphic design skills to build Race Track Flyers.</p>
 								</div>
 								<div class="col-lg-2">
-									<p>March 2013 – May 2013<br><em>(3 months)</em></p>
+									<h5>March 2013 – May 2013<br><em>(3 months)</em></h5>
 								</div>
 							</div><!--/.row -->
-							<div class="row">
+							<div class="row work-content">
 								<div class="col-lg-8 col-lg-offset-2">
-									<h5>N-Depth Solutions (F.K.A. Real Estate Educate)</h5>
-									<h6>Team Leader &amp; Web Designer/Developer</h6>
+									<h3>N-Depth Solutions (F.K.A. Real Estate Educate)</h3>
+									<h4>Team Leader &amp; Web Designer/Developer</h4>
 									<p>Manage and organize the production of client online training along with team management during production. Produce departmental training and standards describing techniques, styles and various steps used by the design department in the creation of projects. Headed development and worked closely with Instructional Design team in translating English courses into Spanish.</p>
 									<p>Manage Moodle Learning Management Systems and Joomla Content Management Systems for company websites. Develop e-learning interactions using Adobe Flash, Captivate and Apple Motion. Design course artwork and layouts using Photoshop and Illustrator. Design marketing, print materials and email newsletters using InDesign. Design custom Facebook pages using FBML and implementation of the Facebook API on company websites. Set up and shoot green screen videos, including directing shoots, setting up lighting, exposure testing and operate the camera. Produce, edit and sync videos and voice-overs using Apple Final Cut Pro and Audacity.</p>
 								</div>
 								<div class="col-lg-2">
-									<p>June 2008 – March 2013 (4 years 10 months)</p>
+									<h5>June 2008 – March 2013 (4 years 10 months)</h5>
 								</div>
 							</div><!--/.row -->
-							<div class="row">
+							<div class="row work-content">
 								<div class="col-lg-8 col-lg-offset-2">
-									<h5>Clear Pages</h5>
-									<h6>Web/Graphic Designer</h6>
+									<h3>Clear Pages</h3>
+									<h4>Web/Graphic Designer</h4>
 									<p>Build and maintain client websites using Dreamweaver. Maintain relationship with clients during development of websites. Act as head of design for all incoming client websites. Utilize Flash when creating banners, video presentations, ads and other interactions for client websites. Create and build client proposals to bid on web design jobs. Utilize Photoshop when creating initial web design concepts for each client. Worked with Network Solutions to setup new client DNS and maintain servers server settings for all sites. Create and maintain client email accounts. Created and designed 15 websites within a year. Acted as head Graphic Designer, Web Designer and Flash Designer.</p>
 								</div>
 								<div class="col-lg-2">
-									<p>January 2007 – June 2008<br><em>(1 year 6 months)</em></p>
+									<h5>January 2007 – June 2008<br><em>(1 year 6 months)</em></h5>
 								</div>
 							</div><!--/.row -->
 							<hr>
-							<div class="row">
+							<div class="row education-content">
 								<div class="col-lg-2">
 									<h5>EDUCATION</h5>
 								</div>
 								<div class="col-lg-8">
-									<h5>Associate of Science (A.S.)<br>
-									Multimedia Authoring</h5>
-									<h6>St. Charles Community College<h6>
+									<h3>Associate of Science (A.S.)<br>
+									Multimedia Authoring</h3>
+									<h4>St. Charles Community College<h4>
 								</div>
 								<div class="col-lg-2">
-									<p>2004-2007</p>
+									<h5>2004-2007</h5>
 								</div>
 
 							</div><!--/.row -->
@@ -232,6 +238,9 @@
 
 						<!-- ===== Contact Tab ===== -->
 						<div class="tab-pane fade" id="contact">
+							<div class="row">
+								<h3><i class="fa fa-comment"></i> Contact</h3>
+							</div>
 							<div class="row">
 								<div class="col-md-6 col-sm-12">
 									<div class="panel panel-default">

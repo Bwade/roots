@@ -471,16 +471,50 @@ input.searchForm:-ms-input-placeholder {
 			.nav-tabs {
 				border-bottom: 1px solid #dddddd;
 			}
-			.col-md-3 {
+			.about-nav {
 				padding-left: 0px;
 				padding-right: 0px;
+				.affix {
+					position: fixed; 
+					top: 49px;
+					left: 116px;
+					width: 285px;
+				}
+				ul.affix-top {
+					position: static;
+				}
+				ul.affix-bottom {
+					position: absolute;
+				}
 			}
 
-			.col-md-9 {
+			.about-content-pane {
+				padding: 0;
+				.work-content{
+					padding: 1.5em 0;
+				}
+				.education-content{
+					padding: 1.5em 0;
+				}
+				h3{
+					.font(20);
+					font-weight: @rwd-ssp-weight-medium;
+					text-transform: uppercase;
+					color:@rwd-dark-gray;
+					margin-top:0;
+				}
+				h4{
+					.font(16);
+					font-weight: @rwd-ssp-weight-light;
+					text-transform: uppercase;
+					color:@rwd-dark-gray;
+				}
 				h5{
 					.font(14);
+					font-weight: @rwd-ssp-weight-light;
+					text-transform: uppercase;
+					color:@rwd-medium-gray;
 				}
-				padding:0;
 				.tab-content{
 					padding: 2em;
 				}
@@ -626,15 +660,4 @@ input.searchForm:-ms-input-placeholder {
 			width: 100%;
 		}    
 	 }
-	.affix {
-	position: fixed; 
-	top: 49px;
-	left: 116px;
-	width: 285px;
-	}
-	ul.affix-top {
-	position: static;
-	}
-	ul.affix-bottom {
-	position: absolute;
-	}
+
